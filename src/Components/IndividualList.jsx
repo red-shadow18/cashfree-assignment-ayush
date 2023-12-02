@@ -42,6 +42,9 @@ const ListContainer=styled.div`
 
         h3 {
             margin:0 !important;
+            width: 100%;
+            word-wrap: break-word;
+            text-align: left;
         }
     }
 
