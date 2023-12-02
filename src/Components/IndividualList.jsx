@@ -60,12 +60,4 @@ const ListContainer=styled.div`
         flex-direction: column;
         gap:15px;
     }
-
-    .title{
-
-    }
-
-    .description{
-        
-    }
 `
