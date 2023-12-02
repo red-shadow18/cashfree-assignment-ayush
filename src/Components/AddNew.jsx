@@ -80,7 +80,7 @@ const AddListContainer=styled.div`
         padding:5px 20px;
     }
     .button{
-        width:100px;
+        max-width:100px;
         border-radius: 4px;
         color:white;
         background-color: black;
