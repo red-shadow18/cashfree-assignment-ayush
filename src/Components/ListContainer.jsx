@@ -12,9 +12,13 @@ const ListContainer=()=>{
     console.log(lists)
     return <OuterDiv>
         <div className="listRenderSection">
+            <h2>Cashfree Dashboard</h2>
+            {!lists.length && <p className="noListInfo">No list to display, add one from the right pane.</p>}
+            <div className="listsContainer">
             {
                 lists.map(list=><IndividualList key={list.id} id={list.id} title={list.title} cards={cards[list.id]}/>)
             }
+            </div>
         </div>
         <div className="addNewListSection">
             <AddNew/>
@@ -32,10 +36,14 @@ const OuterDiv= styled.div`
 
     .listRenderSection {
         width:80%;
-        display: flex;
-        flex-wrap: wrap;
-        gap:20px;
+        
 
+        .listsContainer{
+            width: 100%;;
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+        }
         .deleteButton {
             border:none;
             background-color: transparent;

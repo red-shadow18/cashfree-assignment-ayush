@@ -29,7 +29,12 @@ const CardContainer=styled.div`
 
         h3 {
             margin:0 !important;
-            width: 100%;
+            width: 90%;
+        }
+
+        button {
+            height: fit-content;
+            margin-top: 5px;
         }
     }
 `

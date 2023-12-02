@@ -42,9 +42,14 @@ const ListContainer=styled.div`
 
         h3 {
             margin:0 !important;
-            width: 100%;
+            width: 90%;
             word-wrap: break-word;
             text-align: left;
+        }
+
+        button {
+            height: fit-content;
+            margin-top: 5px;
         }
     }
 
