@@ -20,7 +20,7 @@ export default Card;
 
 const CardContainer=styled.div`
     background-color: white;
-    padding:5px 20px;
+    padding:5px 10px;
     text-align: left;
     word-wrap: break-word;
     .topSection {
