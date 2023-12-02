@@ -29,4 +29,9 @@ const CardContainer=styled.div`
             margin:0 !important;
         }
     }
+
+    .description {
+        text-align: left;
+        word-wrap: break-word;
+    }
 `
