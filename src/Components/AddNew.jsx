@@ -2,6 +2,8 @@ import React,{useState} from "react"
 import styled from "@emotion/styled"
 import { useDispatch } from "react-redux";
 import { addCard, addList } from "../redux/action";
+
+
 const AddNew=({type="list", parentListId=null})=>{
     const dispatch=useDispatch()
     const [listTitle, setListTitle]=useState("")
@@ -11,10 +13,12 @@ const AddNew=({type="list", parentListId=null})=>{
         const{value}=e.target
         setListTitle(value)
     }
+
     const handleCardtitleChange=(e)=>{
         const{value}=e.target
         setCardDetails((prev)=>({...prev, title:value}))
     }
+
     const handleCardDescriptionChange=(e)=>{
         const{value}=e.target
         setCardDetails((prev)=>({...prev, description:value}))
@@ -40,6 +44,7 @@ const AddNew=({type="list", parentListId=null})=>{
 
         setCardDetails({title:"", description:""})
     }
+    
     return <AddListContainer>
         {type==="list"? <div className="dp-flx-clm">
             <input

@@ -1,15 +1,12 @@
-// export const FETCHFROMLOCALSTORAGE="FETCHFROMLOCALSTORAGE"
-// export const ADDTOLOCALSTORAGE="ADDTOLOCALSTORAGE"
-export const ADDLIST="ADDLIST"
-export const ADDCARD="ADDCARD"
-export const DELETELIST="DELETELIST"
-export const DELETECARD="DELETECARD"
+
+export const ADD_LIST="ADD_LIST"
+export const ADD_CARD="ADD_CARD"
+export const DELETE_LIST="DELETE_LIST"
+export const DELETE_CARD="DELETE_CARD"
 
 
-//export const fetchFromLocalstoratge=
 
-
-export const addList=(value)=>({type:ADDLIST, payload:value})
-export const addCard=(value)=>({type:ADDCARD, payload:value})
-export const deleteList=(value)=>({type:DELETELIST, payload:value})
-export const deleteCard=(value)=>({type:DELETECARD, payload:value})
+export const addList=(value)=>({type:ADD_LIST, payload:value})
+export const addCard=(value)=>({type:ADD_CARD, payload:value})
+export const deleteList=(value)=>({type:DELETE_LIST, payload:value})
+export const deleteCard=(value)=>({type:DELETE_CARD, payload:value})
